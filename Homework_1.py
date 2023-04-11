@@ -1,6 +1,8 @@
 # Name: Da-un Jung
 # SBUID: 115337987
-
+##################### SCORE ######################
+####### Score:  8.5/10
+#################################################
 # Remove the ellipses (...) when writing your solutions.
 
 # ---------------------------- Exercise I ---------------------------------------
@@ -29,14 +31,14 @@ def what_to_wear(celsius):
 # compute_triangle_perimeter from scratch  
 
 def shoelace_triangle_area(x1, y1, x2, y2, x3, y3):
-    return ((x1*y2+x2*y3+x3*y1)-(x1*y3+x2*y1+x3*y2))/2
+    return ((x1*y2+x2*y3+x3*y1)-(x1*y3+x2*y1+x3*y2))/2 # area of the triangle is in negative-> the output is wrong-> The area of the triangle is : -32.0 , its perimeter is : 27.440161448987652
     
 
 def euclidean_distance(x1, y1, x2, y2):
-    return ((x1-x2)**2+(y1-y2)**2)**0.5
+    return ((x1-x2)**2+(y1-y2)**2)**0.5 # refrain from returning the entire equation as is, please use python functions and varibales taught in class
 
 def compute_triangle_perimeter(x1, y1, x2, y2, x3, y3):
-    return ((x1-x2)**2+(y1-y2)**2)**0.5+((x2-x3)**2+(y2-y3)**2)**0.5+((x1-x3)**2+(y1-y3)**2)**0.5
+    return ((x1-x2)**2+(y1-y2)**2)**0.5+((x2-x3)**2+(y2-y3)**2)**0.5+((x1-x3)**2+(y1-y3)**2)**0.5 # refrain from returning the entire equation as is, please use python functions and varibales taught in class
     
 
 # ---------------------------- Exercise III -------------------------------------
@@ -61,7 +63,7 @@ def apothem(number_sides, length_side):
 
 import math
 
-def apothem(number_sides, length_side):
+def apothem(number_sides, length_side):  # very good use of functions and variables
     deg2rad=math.pi/number_sides
     tantan=math.tan(deg2rad)
     apothem=length_side/(2*tantan)
